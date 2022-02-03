@@ -7,6 +7,13 @@ according to their general shape to make it easier to
 see differences between similar signs.  The definitions
 follow.
 
+In order to build the PDF you would need a few tools:
+
+
+  * The `lualatex` package
+
+  * The [linja pona 4.9 font](http://musilili.net/linja-pona/) installed and integrated into *latex*.  How to do that is beyond the scope of this document.
+
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
