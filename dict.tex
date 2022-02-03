@@ -1,0 +1,314 @@
+% A chart of all the glyphs in Toki Pona, arranged by shape.
+% Process this with 'lualatex'.
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{hanging}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[left=1.0in,top=0.7in,bottom=0.6in]{geometry}
+\titlespacing*{\section}{0pt}{0.3cm}{0.0cm}
+\newfontface\tpf{linjapona49}
+\newcommand\tpGlyph[1]{
+  \begin{tabular}{c}\huge{\tpf #1} \\ \small #1 \end{tabular}}
+
+\pagestyle{myheadings}
+\markboth{}{Graphical Dictionary of Toki Pona}
+
+\title{Graphical dictionary of Toki Pona \\[1ex]{\tpf lipu+nimi sitelen pi toki+pona}}
+\author{jan Suno}
+
+\begin{document}
+\maketitle
+This dictionary is organized to assist in the reading of
+Toki Pona in the \textit{sitelen} \textit{pona}
+system of hieroglyphs.  The glyphs are grouped here
+according to their general shape to make it easier to
+see differences between similar signs.  The definitions
+follow.
+\footnote{Typesetting with Latex.  The font is
+  \href{http://musilili.net/linja-pona/}{linja pona}.
+  Table layout scripting in
+  \href{http://lua.org}{Lua}.  Definitions from the
+  \href{https://blinry.org/toki-pona-cheat-sheet}{Toki Pona Cheat Sheet}
+  plus additions from ku.}
+
+\directlua{ require("glyphs") }
+
+\pagebreak
+\newcommand\tpDef[2]{\textbf{#1} {\large\tpf #1} #2}
+
+\setlength{\parskip}{0.3em}
+\begin{multicols}{2}
+\raggedright
+\begin{hangparas}{1cm}{1}
+
+\tpDef {a}{(emphasis, emotion or confirmation)}
+
+\tpDef {akesi}{non-cute animal; reptile, amphibian}
+
+\tpDef {ala}{no, no, zero}
+
+\tpDef {alasa}{to hunt, forage}
+
+\tpDef {ale}{all; abundant, countless, bountiful, every, plentiful; abundance, everything, life, universe; 100}
+
+\tpDef{anpa}{bowing down, downward, humble, lowly, dependent}
+
+\tpDef {ante}{different, altered, changed, other}
+
+\tpDef {anu}{enduring, kept, protected, safe, waiting, staying; to continue to}
+
+\tpDef {e}{(before the direct object)}
+
+\tpDef {en}{(between multiple subjects)}
+
+\tpDef {epiku}{incredible}
+
+\tpDef {esun}{market, shop, fair, bazaar, business transaction}
+
+\tpDef {ijo}{thing, phenomenon, object, matter }
+
+\tpDef {ike}{bad, negative; non-essential, irrelevant}
+
+\tpDef {ilo}{tool, implement, machine, device }
+
+\tpDef {insa}{center, content, inside, between; internal organ, stomach}
+
+\tpDef {jaki}{disgusting, obscene, sickly, toxic, unclean, unsanitary }
+
+\tpDef {jan}{human being, person, somebody }
+
+\tpDef {jasima}{reflect, opposite, reverse, copy, contrast}
+
+\tpDef {jelo}{yellow, yellowish}
+
+\tpDef {jo}{to have, carry, contain, hold}
+
+\tpDef {kala}{fish, marine animal, sea creature}
+
+\tpDef {kalama}{to produce a sound; recite, utter aloud}
+
+\tpDef {kama}{arriving, coming, future, summoned; to become, manage to, succeed in}
+
+\tpDef {kasi}{plant, vegetation; herb, leaf}
+
+\tpDef {ken}{to be able to, be allowed to, can, may; possible}
+
+\tpDef {kepeken}{to use, with, by means of}
+
+\tpDef {kili}{kili  fruit, vegetable, mushroom}
+
+\tpDef {kin}{kin  indeed, still, too}
+
+\tpDef {kipisi}{split, slicw, cur, division, segment}
+
+\tpDef {kiwen}{kiwen  hard object, metal, rock, stone}
+
+\tpDef {ko}{clay, clinging form, dough, semi-solid, paste, powder}
+
+\tpDef {kokosila}{speak another language in a toki pona environment}
+
+\tpDef {kon}{air, breath; essence, spirit; hidden reality, unseen agent}
+
+\tpDef {kule}{colorful, pigmented, painted}
+
+\tpDef {kulupu}{community, company, group, nation, society, tribe}
+
+\tpDef {kute}{ear; to hear, listen; pay attention to, obey}
+
+\tpDef {la}{(between the context phrase and the main sentence)}
+
+\tpDef {lanpan}{steal, grab, take, theft}
+
+\tpDef {lape}{sleeping, resting}
+
+\tpDef {laso}{blue, green}
+
+\tpDef {lawa}{head, mind; to control, direct, guide, lead, own, plan, regulate, rule}
+
+\tpDef {leko}{square, cube, block, corner, step, grid}
+
+\tpDef {len}{cloth, clothing, fabric, textile; cover, layer of privacy}
+
+\tpDef {lete}{cold, cool; uncooked, raw}
+
+\tpDef {li}{(between any subject except mi alone or sina alone and its verb; also to introduce a new verb for the same subject)}
+
+\tpDef {lili}{little, small, short; few; a bit; young}
+
+\tpDef {linja}{long and flexible thing; cord, hair, rope, thread, yarn}
+
+\tpDef {lipu}{flat object; book, document, card, paper, record, website}
+
+\tpDef {loje}{red, reddish}
+
+\tpDef {lon}{located at, present at, real, true, existing}
+
+\tpDef {luka}{arm, hand, tactile organ; five}
+
+\tpDef {lukin}{to look at, see, examine, observe, read, watch; to seek, look for, try to}
+
+\tpDef {lupa}{door, hole, orifice, window}
+
+\tpDef {ma}{earth, land; outdoors, world; country, territory; soil}
+
+\tpDef {mama}{parent, ancestor; creator, originator; caretaker, sustainer}
+
+\tpDef {mani}{money, cash, savings, wealth; large domesticated animal}
+
+\tpDef {meli}{woman, female, feminine person; wife}
+
+\tpDef {meso}{average, moderate, halfway, middle}
+
+\tpDef {mi}{I, me, we, us}
+
+\tpDef {mije}{man, male, masculine person; husband}
+
+\tpDef {misikeke}{medication, pill, cure, therapy}
+
+\tpDef {moku}{to eat, drink, consume, swallow, ingest }
+
+\tpDef {moli}{dead, dying}
+
+\tpDef {monsi}{back, behind, rear}
+
+\tpDef {monsuta}{monster, scary, afraid, horror, fear}
+
+\tpDef {mu}{(animal noise or communication)}
+
+\tpDef {mun}{moon, night sky object, star}
+
+\tpDef {musi}{artistic, entertaining, frivolous, playful, recreational}
+
+\tpDef {mute}{many, a lot, more, much, several, very; quantity; 20}
+
+\tpDef {namako}{spice, something extra}
+
+\tpDef {nanpa}{-th (ordinal number); number}
+
+\tpDef {nasa}{unusual, strange; foolish, crazy; drunk, intoxicated}
+
+\tpDef {nasin}{way, custom, doctrine, method, path, road}
+
+\tpDef {nena}{bump, button, hill, mountain, nose, protuberance}
+
+\tpDef {ni}{that, this}
+
+\tpDef {nimi}{name, word}
+
+\tpDef {noka}{foot, leg, organ of locomotion; bottom, lower part}
+
+\tpDef {o}{hey! O! (vocative or imperative)}
+
+\tpDef {oko}{eye}
+
+\tpDef {olin}{to love, have compassion for, respect, show affection to}
+
+\tpDef {ona}{he, she, it, they}
+
+\tpDef {open}{to begin, start; open; turn on}
+
+\tpDef {pakala}{botched, broken, damaged, harmed, messed up}
+
+\tpDef {pali}{to do, take action on, work on; build, make, prepare}
+
+\tpDef {palisa}{long hard thing; branch, rod, stick}
+
+\tpDef {pan}{cereal, grain; barley, corn, oat, rice, wheat; bread, pasta}
+
+\tpDef {pana}{to give, send, emit, provide, put, release}
+
+\tpDef {pi}{of}
+
+\tpDef {pilin}{heart (physical or emotional); feeling (an emotion, a direct experience)}
+
+\tpDef {pimeja}{black, dark, unlit}
+
+\tpDef {pini}{ago, completed, ended, finished, past}
+
+\tpDef {pipi}{bug, insect, ant, spider}
+
+\tpDef {poka}{hip, side; next to, nearby, vicinity}
+
+\tpDef {poki}{container, bag, bowl, box, cup, cupboard, drawer, vessel}
+
+\tpDef {pona}{good, positive, useful; friendly, peaceful; simple}
+
+\tpDef {pu}{interacting with the official Toki Pona book}
+
+\tpDef {sama}{same, similar; each other; sibling, peer, fellow; as, like}
+
+\tpDef {seli}{fire; cooking element, chemical reaction, heat source}
+
+\tpDef {selo}{outer form, outer layer; bark, peel, shell, skin; boundary}
+
+\tpDef {seme}{what? which?}
+
+\tpDef {sewi}{area above, highest part, something elevated; awe-inspiring, divine, sacred, supernatural}
+
+\tpDef {sijelo}{body (of person or animal), physical state, torso}
+
+\tpDef {sike}{round or circular thing; ball, circle, cycle, sphere, wheel; of one year}
+
+\tpDef {sin}{new, another, more}
+
+\tpDef {sina}{you}
+
+\tpDef {sinpin}{face, foremost, front, wall}
+
+\tpDef {sitelen}{image, picture, representation, symbol, mark, writing}
+
+\tpDef {soko }{mushroom, fungus}
+
+\tpDef {sona}{to know, be skilled in, be wise about, have information on; to know how to}
+
+\tpDef {soweli}{animal, beast, land mammal}
+
+\tpDef {suli}{big, heavy, large, long, tall; important; adult}
+
+\tpDef {suno}{sun; light, brightness, glow, radiance, shine; light source}
+
+\tpDef {supa}{horizontal surface, thing to put or rest something on}
+
+\tpDef {suwi}{sweet, fragrant; cute, innocent, adorable}
+
+\tpDef {tan}{by, from, because of}
+
+\tpDef {taso}{but, however; only}
+
+\tpDef {tawa}{going to, toward; for; from the perspective of; moving}
+
+\tpDef {telo}{water, liquid, fluid, wet substance; beverage}
+
+\tpDef {tenpo}{time, duration, moment, occasion, period, situation}
+
+\tpDef {toki}{to communicate, say, speak, say, talk, use language, think}
+
+\tpDef {tomo}{indoor space; building, home, house, room}
+
+\tpDef {tonsi}{non-binary person}
+
+\tpDef {tu}{two}
+
+\tpDef {unpa}{to have sexual or marital relations with}
+
+\tpDef {uta}{mouth, lips, oral cavity, jaw}
+
+\tpDef {utala}{to battle, challenge, compete against, struggle against}
+
+\tpDef {walo}{white, whitish; light-colored, pale}
+
+\tpDef {wan}{unique, united; one}
+
+\tpDef {waso}{bird, flying creature, winged animal}
+
+\tpDef {wawa}{strong, powerful; confident, sure; energetic, intense}
+
+\tpDef {weka}{absent, away, ignored}
+
+\tpDef {wile}{must, need, require, should, want, wish}
+
+\end{hangparas}
+\end{multicols} 
+\end{document}
