@@ -18,6 +18,11 @@ Then all you need to do is issue the command:
     lualatex dict.tex
 ```
 
+## The grammar
+
+A separate document provides the rules of Toki Pona grammar with all
+examples in *sitelen pona*.
+
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a

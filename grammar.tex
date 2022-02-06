@@ -1,0 +1,297 @@
+% The grammar section of the Cheat Sheet, rewritten to
+% use sitelen pona.
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{changepage}
+\usepackage{hyperref}
+\usepackage[left=1.0in,top=0.7in,bottom=0.6in]{geometry}
+\titlespacing*{\section}{0pt}{0.3cm}{0.0cm}
+\newfontface\tpf{linjapona49}
+\pagestyle{myheadings}
+\markboth{}{A Graphical Grammar of Toki Pona}
+\newcommand\tp[1]{{\tpf #1}}
+
+\title{A Graphical Grammar of Toki Pona \\[1ex]{\tp{nasin toki sitelen pi toki+pona}}}
+\author{jan Suno}
+
+\begin{document}
+\maketitle
+This article explains the rules of Toki Pona grammar
+using only the \textit {sitelen pona} hieroglyphic
+writing system in examples.  For help with the pronunciation,
+definition, and spelling using the Latin alphabet, see
+\textit {A Graphic Dictionary of Toki Pona}.
+\footnote{Typesetting with LaTeX.  The font is
+  \href{http://musilili.net/linja-pona/}{linja pona}.
+  Initial explanations are from the
+  \href{https://blinry.org/toki-pona-cheat-sheet}{Toki
+    Pona Cheat Sheet}}
+
+\newenvironment{ex}{
+  \begin{adjustwidth}{0.5cm}{}}{\end{adjustwidth}}
+
+\setlength{\parskip}{0.3em}
+\begin{multicols}{2}
+\raggedright
+
+\section*{Basic sentences}
+The particle \tp{li} separates the subject and the verb:
+\begin{ex}
+  \tp{soweli li moku} = The cat is eating.
+
+  \tp{jan li lape} = The person is sleeping.
+\end{ex}
+
+There is no verb “to be”; the part after \tp{li} can also be
+a noun or an adjective.
+\begin{ex}
+  \tp{kili li moku.} = Fruits are food. 
+
+  {\tpf telo li pona}. = Water is good.
+
+  {\tpf telo li moku}. = Water is a drink.
+\end{ex}
+
+If the subject is {\tpf mi} or {\tpf sina}, the {\tpf li}
+is always omitted:
+\begin{ex}
+  {\tpf mi moku}. = I eat.
+
+  {\tpf sina pona}. = You are good.
+\end{ex}
+
+\section*{Modifying words }
+Words can be modified by appending other words.  With just
+a single modifer, just put it right after the main word:
+\begin{ex}
+  {\tpf jan lili} = small human = child
+
+  {\tpf tomo mi} = my house
+
+  {\tpf pilin pona} = to feel good = to be happy
+\end{ex}
+
+To modify with a group of words, separate them with
+the particle {\tpf pi}. Although it can often be thought
+of as meaning “of”, the grammatical function of {\tpf pi} is
+actually different: it regroups the folowing words.
+Note the difference:
+\begin{ex}
+  {\tpf tomo telo nasa} = crazy water house = strange bathroom
+
+  {\tpf tomo pi++telo nasa} = house of the crazy water = pub
+
+  {\tpf jan wawa ala} = no strong people
+
+  {\tpf jan pi++wawa ala} = people of not-strong = weak people
+\end{ex}
+
+{\tpf pi} can only be used when followed by multiple words.
+
+\section*{Ambiguity}
+You’ll often need to know the context to decide what
+things mean.  Many words have multiple or general meanings:
+\begin{ex}
+  {\tpf soweli} = cat / dog / (any land mammal)
+\end{ex}
+
+Many words can play the role of a noun, adjective, or verb: 
+\begin{ex}
+  {\tpf telo} = water / wet / to wash
+
+  {\tpf pona} = good, simple / to fix, to repair
+\end{ex}
+
+Nouns have no singular or plural, and no definite or
+indefinite article:
+\begin{ex}
+  {\tpf kili} = a fruit / the fruit / some fruits / the fruits
+\end{ex}
+
+There are ways to narrow down \textit{which} object
+you are talking about:
+\begin{ex}
+  {\tpf kili ni li ike}. = \textit{This} apple is bad.
+
+  {\tpf kili mi li ike}. = \textit{My} apple is bad.
+
+  {\tpf kili pi++jelo walo li pona}. = The \textit{light yellow}
+  apple is good.
+
+  {\tpf kili li lon supa.  kili ni li pona.} =
+  The apple is on the table.  That apple is good.
+\end{ex}
+
+\section*{Direct objects}
+The particle {\tpf e} separates a direct object from
+the rest of the sentence:
+\begin{ex}
+  {\tpf soweli li moku e telo.} = The cat drinks the water.
+
+  {\tpf mi telo e soweli.} = I’m washing the cat. 
+\end{ex}
+
+\section*{Negation}
+To negate a word, append {\tpf ala}:
+\begin{ex}
+  {\tpf mi lape ala.} = I'm not sleeping.
+
+  {\tpf jan ala li toki.} = Nobody is talking.
+\end{ex}
+
+\section*{Questions}
+To ask yes-or-no questions, replace the verb with
+“(verb) {\tpf ala} (verb)”:
+\begin{ex}
+  {\tpf sina ken ala ken lape} = Are you able to sleep?
+
+  {\tpf soweli li wile ala wile moku} = Is the cat hungry?
+\end{ex}
+
+Alternatively, append {\tpf anu seme} (”or what”) to
+the sentence:
+\begin{ex}
+  {\tpf sina wile uta e mi anu seme?} = Do you want to kiss me?
+\end{ex}
+
+To answer these questions, reply with either “(verb)” or
+“(verb) {\tpf ala}”.
+\begin{ex}
+  {\tpf wile uta} = Yes, I want to kiss you.
+
+  {\tpf wile uta ala} = No, I do not want to kiss you.
+\end{ex}
+
+To ask questions that can’t be answered with yes or no,
+write a normal sentence and replace the word in question
+with {\tpf seme}:
+\begin{ex}
+  {\tpf sina moku e seme?} = What are you eating?
+
+  {\tpf seme li moku e kili mi?} = Who/what ate my fruit?
+\end{ex}
+
+\section*{Providing context}
+To provide context for a sentence, prepend another
+sentence or expression, followed by {\tpf la}.
+This often results in a structures like
+“If (part 1), then (part 2)” or “In the context of
+(part 1), (part2).”
+\begin{ex}
+  {\tpf mi lape la ali li pona}. = When I’m asleep,
+  everything is okay.
+
+  {\tpf mi la kili li pona}. = To me, fruit is good.
+\end{ex}
+
+The \textit{context} of a sentence is not the same
+thing as it's \textit{subject}.
+
+\section*{Time and Tense}
+Verbs have no tense:
+\begin{ex}
+  {\tpf mi moku.} = I am eating. / I was eating. / I will be eating.
+\end{ex}
+
+Instead, use a {\tpf la}-clause to add a temporal context
+to a sentence:
+\begin{ex}
+{\tpf tenpo ni la mi lape}. = I am sleeping right now.
+
+{\tpf tenpo kama la mi lape}. = I will be sleeping in the future.
+
+{\tpf tenpo pini la mi lape}. = I slept in the past.
+
+{\tpf tenpo suno kama la mi tawa lon pi++tomo esun}. =
+Tomorrow I will go to the store.
+\end{ex}
+
+\section*{Compound sentences}
+Separate multiple subjects in a sentence using {\tpf en}:
+\begin{ex}
+  {\tpf lape en moku li suli}. = Sleep and food are important.
+\end{ex}
+
+To say that the subject does more than one thing,
+you can use multiple {\tpf li}-clauses:
+\begin{ex}
+  {\tpf pipi li moku li pakala}. = The bug eats and destroys.
+\end{ex}
+
+If there are several direct objects of the same verb,
+you can use multiple {\tpf e}-clauses:
+\begin{ex}
+  {\tpf mi moku e kili e telo}. = I consume fruit and water.
+\end{ex}
+
+\section*{Names}
+Names of countries, languages, or people are
+treated like adjectives. They are attached to a
+noun indicating what class of thing is being named, and
+often simplified to Toki Pona’s limited alphabet.
+In sitelen pona, the individual letters are then replaced
+by a series of signs within a cartouche, where only the
+initial sound of each sign is used.  Exactly which words to use
+is an artistic choice:
+\begin{ex}
+  {\tpf [\_kili\_ale\_pilin\_ijo\_lupa\_en]} = Kapile = Gabriele
+
+  {\tpf ma [\_ko\_awen\_nena\_anu\_taso\_awen] li pona lukin}.
+  = Kanata = Canada is pretty.
+
+  {\tpf mi toki ala e toki [\_ilo\_ni\_lete\_ilo]}.
+  = Inli = I don't speak English.
+
+  {\tpf ma tomo [\_noka\_uta\_jo\_olin\_kon\_akesi] li suli}.
+  = Nujoka = New York is big.
+\end{ex}
+
+This use of cartouches is why the \textit{sitelen pona} sign for
+\textit{name} or \textit{word} is {\tpf nimi}.
+
+Note: with Latin letters, names are capitalized.
+
+\section*{Prepositions}
+{\tpf lon, kepeken, tawa}, and {\tpf tan}
+can be used as prepositions at the end of a sentence
+to modify the verb:
+\begin{ex}
+  {\tpf mi moku lon tomo.} = I eat in the house.
+
+  {\tpf mi moku kepeken ilo moku.} = I eat using a fork.
+
+  {\tpf sina pona tawa mi.} = You are good for me. = I like you.
+
+  {\tpf sina tawa weka tan seme} = Why are you leaving?
+\end{ex}
+
+In proper Toki Pona, prepositions do \textit{not} modify nouns.
+
+\section*{Commands}
+Use {\tpf o} and then what you want the person to do:
+\begin{ex}
+  {\tpf o lukin e ni}! = Look at this!
+\end{ex}
+
+To address someone, start a sentence with “(person) {\tpf o},”:
+\begin{ex}
+  {\tpf jan [\_meli\_esun\_luka\_ilo\_noka] o, sina pona lukin.} = Malin, you are pretty.
+\end{ex}
+
+Also use this together with a command, merging the two
+{\tpf o}’s:
+
+\begin{ex}
+  {\tpf jan [\_sama\_anpa\_moku] o tawa tomo sina.} = Sam, go home.
+\end{ex}
+\section*{Numbers}
+Combine number words to add them up:
+\begin{ex}
+  {\tpf wan} = 1, {\tpf tu} = 2, {\tpf luka} = 5
+
+  {\tpf luka luka tu wan} = 13
+\end{ex}
+\end{multicols} 
+\end{document}

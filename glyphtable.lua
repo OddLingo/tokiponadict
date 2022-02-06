@@ -69,6 +69,6 @@ group("Curves ale ike pona la kon telo jasima kute linja\
 musi nena lupa seme tan wile")
 group("Hand luka kepeken pana pali moku")
 group("Feet noka awen tawa kama")
-group("Animals akesi kala pipi waso soweli suwi mu")
+group("Animals akesi kala pipi waso soweli suwi mu kijetesantakalu")
 group("Squiggles unpa lanpan jaki esun sewi jo kasi")
 group("Other olin pilin mun ko kiwen tomo ilo kulupu oko soko")
